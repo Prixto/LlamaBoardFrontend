@@ -1,0 +1,35 @@
+<app-header></app-header>
+<div class="welcome-title-user-home">
+  <h1 class="title-user-home">
+    Bienvenido a LlamaBeats!
+  </h1>
+  <h3 class="sub-title-user-home">
+    Canciones más votadas:
+  </h3>
+  <div *ngIf="datos">
+    <div class="card">
+      <div class="card-body">
+        <table class="table table-bordered table-stripes">
+          <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Artista</th>
+            <th>Duracion</th>
+            <th>Genero</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr *ngFor="let item of datos">
+            <td>{{item.nombre}}</td>
+            <td>{{item.artista}}</td>
+            <td>{{item.duracion}}</td>
+            <td>{{item.genero.nombre}}</td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<app-footer></app-footer>

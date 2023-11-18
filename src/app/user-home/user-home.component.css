@@ -1,0 +1,19 @@
+.card-title{
+  font-family: Witch;
+  font-size: larger
+}
+
+.title-user-home{
+  color: white;
+  font-family: Witch;
+  padding: 30px;
+  text-align: center;
+  font-size: 80px;
+  background-color: rgb(139, 34, 255);
+}
+
+.sub-title-user-home{
+  font-family: Witch;
+  padding: 20px;
+}
+

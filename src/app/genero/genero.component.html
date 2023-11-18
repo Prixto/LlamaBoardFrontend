@@ -1,0 +1,16 @@
+<app-header></app-header>
+<div *ngIf="datosGeneros">
+  <h2 class="genero-title-main">Listado de Generos</h2>
+  <div *ngFor="let genero of datosGeneros; let i = index">
+    <h3 class="genero-title-generos" (click)="toggleGenero(i)">
+      {{ genero.nombre }}
+      <span class="dropdown-arrow" [ngClass]="{ 'expanded': generoExpandido === i }"></span>
+    </h3>
+    <ul [ngClass]="{ 'hidden': generoExpandido !== i, 'song-matrix': generoExpandido === i }">
+      <app-song class="cancionesImagen" *ngFor="let cancion of genero.canciones" [nombre]="cancion.nombre" [artista]="cancion.artista">
+      </app-song>
+    </ul>
+  </div>
+</div>
+<app-footer></app-footer>
+

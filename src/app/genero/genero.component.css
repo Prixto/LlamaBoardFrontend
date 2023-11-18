@@ -1,0 +1,29 @@
+.hidden {
+  display: none;
+}
+
+.genero-title-main{
+  font-family: Witch;
+  padding: 20px;
+  background-color: rgb(139, 34, 255);
+}
+
+.genero-title-generos{
+  font-family: Witch;
+  font-size: 30px;
+  padding: 10px;
+}
+
+ul.song-matrix {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  list-style-type: none;
+}
+
+.cancionesImagen{
+  padding: 15px;
+}
+
+
+
+

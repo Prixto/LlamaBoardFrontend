@@ -1,0 +1,40 @@
+<div class="sign-up-container">
+  <div class="sign-up-form">
+    <div class="screen">
+      <div class="screen__content">
+        <form class="sign-up" (ngSubmit)="registrarUsuario()" >
+          <div class="sign-up__field">
+            <i class="sign-up__icon fas fa-user"></i>
+            <input type="text" id="email" name="email" [(ngModel)]="usuario.email" required
+                   class="sign-up__input" placeholder="Email">
+          </div>
+          <div class="sign-up__field">
+            <i class="sign-up__icon fas fa-user"></i>
+            <input type="text" id="nombre" name="nombre" [(ngModel)]="usuario.nombre" required
+                   class="sign-up__input" placeholder="Nombre">
+          </div>
+          <div class="sign-up__field">
+            <i class="sign-up__icon fas fa-user"></i>
+            <input type="text" id="apellido" name="apellido" [(ngModel)]="usuario.apellido" required
+                   class="sign-up__input" placeholder="Apellido">
+          </div>
+          <div class="sign-up__field">
+            <i class="sign-up__icon fas fa-lock"></i>
+            <input type="password" id="password" name="password" [(ngModel)]="usuario.password" required
+                   class="sign-up__input" autocomplete="on" placeholder="Password">
+          </div>
+          <button type="submit" class="button sign-up__submit" (click)="validateForm()">
+            <span class="button__text">Sign Up </span>
+            <i class="button__icon fas fa-chevron-right"></i>
+          </button>
+        </form>
+      </div>
+      <div class="screen__background">
+        <span class="screen__background__shape screen__background__shape4"></span>
+        <span class="screen__background__shape screen__background__shape3"></span>
+        <span class="screen__background__shape screen__background__shape2"></span>
+        <span class="screen__background__shape screen__background__shape1"></span>
+      </div>
+    </div>
+  </div>
+</div>

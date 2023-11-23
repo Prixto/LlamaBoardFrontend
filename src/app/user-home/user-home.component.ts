@@ -1,8 +1,5 @@
 import { Component } from '@angular/core';
-import {CancionComponent} from "../cancion/cancion.component";
 import {UserHomeService} from "./user-home.service";
-import {dateTimestampProvider} from "rxjs/internal/scheduler/dateTimestampProvider";
-
 
 @Component({
   selector: 'app-user-home',
@@ -18,5 +15,9 @@ export class UserHomeComponent {
     this.userHomeService.getCanciones().subscribe((data) =>{
       this.datos = data;
     });
+  }
+
+  votarPorCancion(cancionId: number) {
+
   }
 }

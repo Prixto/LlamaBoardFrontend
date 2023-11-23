@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {Usuario} from "../DB/usuario/usuario";
 
 @Component({
   selector: 'app-header',
@@ -7,4 +8,9 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
   title: string = "LlamaBeats";
+  user: Usuario;
+
+
+
+
 }

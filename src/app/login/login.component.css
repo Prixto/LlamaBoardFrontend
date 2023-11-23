@@ -159,3 +159,7 @@ img{
   margin-left: auto;
   color: #797979;
 }
+
+.error-message{
+  padding: 10px;
+}

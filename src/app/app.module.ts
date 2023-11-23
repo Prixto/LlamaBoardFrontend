@@ -18,6 +18,7 @@ import { UsuarioComponent } from './DB/usuario/usuario.component';
 import {CancionService} from "./cancion/cancion.service";
 import {FormsModule} from "@angular/forms";
 import { SongComponent } from './song/song.component';
+import {CookieService} from "ngx-cookie-service";
 
 @NgModule({
   declarations: [
@@ -41,7 +42,10 @@ import { SongComponent } from './song/song.component';
         NgOptimizedImage,
         FormsModule
     ],
-  providers: [CancionService],
+  providers: [
+    CancionService,
+    CookieService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

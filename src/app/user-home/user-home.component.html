@@ -24,6 +24,9 @@
             <td>{{item.artista}}</td>
             <td>{{item.duracion}}</td>
             <td>{{item.genero.nombre}}</td>
+            <td>
+              <button (click)="votarPorCancion(item.id)">Votar</button>
+            </td>
           </tr>
           </tbody>
         </table>
